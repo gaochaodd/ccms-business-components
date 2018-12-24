@@ -1,0 +1,86 @@
+{
+  "name": "ccms-business-components",
+  "version": "0.0.2",
+  "description": "shuyun ccms business components",
+  "keywords": [
+    "angular",
+    "es6",
+    "business",
+    "components"
+  ],
+  "main": "./index.js",
+  "scripts": {
+    "pub": "npm publish dist",
+    "build": "NODE_ENV=production webpack --config webpack-build.config.js && cp package.json ./dist/package.json && cp index.js ./dist/index.js",
+    "start": "concurrently \"node server.js\" \"fe-mock-server --mock \"./mock/\" --api-prefix \"/api\" --port 8989\"",
+    "mock": "npx fe-mock-server --mock \"./mock/\" --api-prefix \"/api\" --port 8989"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "angular-mocks": "1.5.8",
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "7.1.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-minify": "^0.5.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "concurrently": "^3.5.1",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.21.0",
+    "cssnano": "^3.7.1",
+    "eslint": "^2.10.2",
+    "eslint-friendly-formatter": "^2.0.4",
+    "eslint-loader": "^1.1.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.1",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fe-mock-server": "0.0.7",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.0",
+    "husky": "^0.10.1",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "json-mock-kuitos": "^1.1.4",
+    "node-dir": "^0.1.11",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "postcss-loader": "^0.7.0",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.1.1",
+    "sinon": "^2.0.0-pre",
+    "style-loader": "^0.13.0",
+    "url": "^0.11.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "peerDependencies": {
+    "angular": "1.5.8"
+  },
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-es-utils": "^2.1.2",
+    "angular-resource": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-ui-router": "0.2.18",
+    "ccms-components": "^2.37.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ShuyunFF2E/ccms-components"
+  }
+}
