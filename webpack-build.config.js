@@ -41,7 +41,7 @@ module.exports = {
 		'angular': 'angular',
 		'angular-resource': '\'ngResource\'',
 		'angular-ui-router': '\'ui.router\'',
-		'ccms-components': '\'ccmsComponents\''
+		'ccms-components': '\'ccms.components\''
 	},
 	plugins: [
 		new webpack.DefinePlugin({
