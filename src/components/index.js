@@ -10,6 +10,7 @@ import areaSelector from './area-selector';
 import customerProfileBoard from './customer-profile-board';
 import smsEditor from './sms-editor';
 import smsPreview from './sms-preview';
+import shopSelector from './shop-selector';
 
 
 export default angular
@@ -17,7 +18,8 @@ export default angular
 		areaSelector,
 		customerProfileBoard,
 		smsEditor,
-		smsPreview
+		smsPreview,
+		shopSelector
 	])
 	.name;
 
