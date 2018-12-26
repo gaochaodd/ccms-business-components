@@ -10,10 +10,13 @@
   ],
   "main": "./index.js",
   "scripts": {
-    "pub": "npm publish dist",
+    "release": "npm run patch && npm run build && npm publish dist",
+    "prerelease": "npm run prepatch && npm run build && npm publish dist",
     "build": "NODE_ENV=production webpack --config webpack-build.config.js && cp package.json ./dist/package.json && cp index.js ./dist/index.js",
     "start": "concurrently \"node server.js\" \"fe-mock-server --mock \"./mock/\" --api-prefix \"/api\" --port 8989\"",
-    "mock": "npx fe-mock-server --mock \"./mock/\" --api-prefix \"/api\" --port 8989"
+    "mock": "npx fe-mock-server --mock \"./mock/\" --api-prefix \"/api\" --port 8989",
+    "patch": "bump --patch --commit --push",
+    "prepatch": "bump --prepatch --commit --push"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -60,6 +63,7 @@
     "style-loader": "^0.13.0",
     "url": "^0.11.0",
     "url-loader": "^0.5.7",
+    "version-bump-prompt": "^4.2.2",
     "webpack": "^1.12.2",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-dev-middleware": "^1.2.0",
