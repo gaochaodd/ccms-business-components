@@ -38,3 +38,14 @@ import ccmsBusinessComponents from 'ccms-business-components';
 
 angular.module('app', [ngResource, uiRouter, ccmsComponents, ccmsBusinessComponents]);
 ```
+
+## 贡献代码
+
+### 开发步骤
+
+1. 组内的人员直接 **clone** 本项目；其它人员请 **fork** 本项目。
+2. 基于 master 分支创建你的分支，例如 feature/abc, bugfix/abc, docs/abc
+3. 开发完成之后，在 github 网页中创建一个 pull request，base 为 master，compare 为你的分支名
+4. 等待上游 review，merge pull request
+5. 在开始另一个功能开发创建新分支之前，应当先将 master 分支同步为最新的状态。
+6. 重复 2~5 的操作，创建新分支继续其它功能的开发
