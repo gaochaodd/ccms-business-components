@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	angular.module('app', ['ccms.components', 'topService', 'josService', 'qkService'])
+	angular.module('app', ['ccms.business.components', 'topService', 'josService', 'qkService'])
 
 		.controller('ctrl', function($scope, $ccGoodsSelector, topFactory, josFactory, qkFactory) {
 
