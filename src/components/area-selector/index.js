@@ -9,7 +9,7 @@ import AreaSelectorService from './AreaSelectorService';
 import AreaSelectorProvider from './AreaSelectorProvider';
 
 export default angular
-	.module('ccms.business.components.areaSelector', [
+	.module('ccms.components.areaSelector', [
 		'ccms.components.modal',
 		'ccms.components.tips',
 		'ccms.components.checkbox',

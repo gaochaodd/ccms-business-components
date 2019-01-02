@@ -11,15 +11,17 @@ import customerProfileBoard from './customer-profile-board';
 import smsEditor from './sms-editor';
 import smsPreview from './sms-preview';
 import shopSelector from './shop-selector';
+import goodsSelector from './goods-selector';
 
 
 export default angular
-	.module('ccms.components.business', [
+	.module('ccms.business.components.ui', [
 		areaSelector,
 		customerProfileBoard,
 		smsEditor,
 		smsPreview,
-		shopSelector
+		shopSelector,
+		goodsSelector
 	])
 	.name;
 
