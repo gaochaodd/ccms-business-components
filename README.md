@@ -11,7 +11,7 @@ npm run release
 ### 预发布
 
 ```
-npm run prerelease
+npm run test-release
 ```
  
 ### 开发
