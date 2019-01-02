@@ -1,6 +1,9 @@
 # ccms-business-components
  数据赢家业务组件库
  
+ [![npm version](https://img.shields.io/npm/v/ccms-business-components.svg?style=flat-square)](https://www.npmjs.com/package/ccms-business-components)
+ [![npm downloads](https://img.shields.io/npm/dt/ccms-business-components.svg?style=flat-square)](https://www.npmjs.com/package/ccms-business-components)
+ 
 ### 发布
 
 注意: 发布前确认分支是否正确, 代码是否最新
