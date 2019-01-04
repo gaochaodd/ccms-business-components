@@ -1,6 +1,6 @@
 {
   "name": "ccms-business-components",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "shuyun ccms business components",
   "keywords": [
     "angular",
@@ -78,7 +78,7 @@
     "angular-resource": "1.5.8",
     "angular-sanitize": "1.5.8",
     "angular-ui-router": "0.2.18",
-    "ccms-components": "2.37.7-0"
+    "ccms-components": "2.37.8-0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
